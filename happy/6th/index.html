@@ -149,7 +149,24 @@
 </section>
 
 <section>
-    <h2>PDF and ICC news</h2>
+    <h2>PDF support</h2>
+    <img src="cmyk1.png" />
+    <img src="cmyk2.png" />
+    <h1>FIXME add one more before/after</h1>
+
+    <p>Many image formats are used inside PDF files, and this year, our PDF engine gained support for two more: JBIG2 and CCITT.
+    While they can be on seen in standalone files (or in TIFF for CCITT), it is way more common to see them embedded in PDF files.</p>
+
+    <p>Also, building on the ICC decoder started last year, we finally started to use it to perform color corrections when rendering files.
+        This gives us rendering closer to what the PDF would look like once printed.
+    </p>
+
+    <p>We also progressed a lot on text rendering as we gained support for LZW decoding and CFF fonts.
+    </p>
+
+    <h1>FIXME add link</h1>
+    <p>To put a bit of perspective on how much the PDF engine progressed this year, we went from rendering ~25% of <a href="">test suite</a> without diagnostics to ~80%. Massive progress!</p>
+
 </section>
 
 <section>
