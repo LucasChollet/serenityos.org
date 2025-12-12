@@ -63,3 +63,15 @@ section img {
     max-width: 350px;
     clear: both;
 }
+
+code {
+    padding: 0.2em 0.4em;
+    margin: 0;
+    font-size: 85%;
+    background-color: #f6f8fa;
+    border-radius: 6px;
+    color: #24292e;
+    font-family: ui-monospace, SFMono-Regular, SF Mono, Menlo, Consolas,
+    "Liberation Mono", "Courier New", monospace;
+    border: 1px solid rgba(27,31,35,0.15);
+}
