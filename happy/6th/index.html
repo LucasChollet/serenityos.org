@@ -154,6 +154,25 @@
 
 <section>
     <h2>Image formats and EXIF support</h2>
+    <img src="exif.png" alt="A picture of EXIF metadata shown from the properties window in FileManager.">
+    <p>A new image decoder has been introduced this year to support TIFF images.
+        It has been later extended to understand the EXIF metadata format (which is based on the TIFF structure),
+        and finally after some integration it allows us to decode EXIF metadata from JPEG, PNG and of course TIFF files.
+    </p>
+    <p>
+        We also saw the creation of a new tool: <code>animation</code>. In a very similar fashion to <code>image</code>,
+        it allows to convert image files from one format to another, but you've guessed it, it is specialized for animated images.
+        It has support for writing APNG, GIF and WebP images!
+    </p>
+    <p>
+        Some performance work as also been done on multiple of our encoders and decoders but the most impressive improvement is on the PNG encoder
+        which is now about 10 times as fast!
+    </p>
+
+    <p>
+        While sharing progress on the WebP encoder, <a href="https://github.com/nico">Nico</a> realized that Discord didn't support them.
+        So he filled a bug and got the people at Discord to <a href="https://github.com/discord/lilliput/issues/159">work on it</a>.
+    </p>
 </section>
 
 <section>
