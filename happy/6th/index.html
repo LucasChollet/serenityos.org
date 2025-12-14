@@ -85,13 +85,42 @@
 
 <section>
     <h2>SerenityOS is now running on RISC-V</h2>
+    <img class="serenity-image" src="riscv.png" alt="SerenityOS terminal showing the output 'uname -sm': 'SerenityOS riscv64'">
+    <p>
+        Following the support for the x86-64 and AArch64 (64-bit Arm) architectures, SerenityOS now runs on RISC-V!
+    </p>
+    <p>
+        It boots to the desktop when running in QEMU and supports mouse and keyboard input via the new virtio-input driver, which even AArch64 doesn't support yet.
+        Running on real hardware (a VisionFive 2) was also tested, although support for that isn't upstream at the moment.
+    <p>
+        RISC-V support is not quite up to par with x86-64 yet. Multiple tests are still failing due to missing or inaccurate math functions and SMP (multicore) isn't supported either yet.
+    </p>
 </section>
 
 <section>
     <h2>More kernel work</h2>
-    <p>USB Support</p>
-    <p>Loop devices</p>
-    <p>FAT32?</p>
+    <p>
+        Another new kernel feature is support for xHCI USB host controllers.
+        This makes it possible to boot SerenityOS from a USB drive on modern systems.
+    </p>
+    <p>
+        Also new is support for loop devices. This makes it possible to mount disk image files.
+    </p>
+    <p>
+        FUSE allows implementing filesystem drivers in userspace.
+    </p>
+    <p>
+        FAT write support,
+        FAT12/16 support,
+        mkfs.fat
+    </p>
+    <p>
+        Basic support for KASAN
+    </p>
+    <p>
+        First steps towards IPv6 support.
+        <!-- https://github.com/SerenityOS/serenity/pull/25009 -->
+    </p>
 </section>
 
 <section>
